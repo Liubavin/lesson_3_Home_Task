@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    var numbers = [];
+        for (var i = 20;i<=40;i++ ){
+            if ((i%2)==0){
+                numbers.push(i);
+            }
+        }
+    console.log(numbers);
+
+    var first = numbers[10];
+    numbers[10] = numbers[0];
+    numbers[0] = first;
+
+    var second = numbers[9];
+    numbers[9] = numbers[1];
+    numbers[1] = second;
+
+    var third = numbers[8];
+    numbers[8] = numbers[2];
+    numbers[2] = third;
+
+    var fours = numbers[7];
+    numbers[7] = numbers[3];
+    numbers[3] = fours;
+
+    var fifth = numbers[6];
+    numbers[6] = numbers[4];
+    numbers[4] = fifth;
+    console.log(numbers);
+</script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    var colors = ['blue', 'yellow','red','green','something', ];
+    console.log(colors);
+    //reverse (наш масив но в обратном порядке)
+    colors.reverse();
+    console.log(colors);
+    //push - добавляем в конец масива
+    console.info('Array.push(elem)');
+    colors.push('orange');
+    console.log(colors);
+  // pop достает елемент с конца удаляет из масива и берет в переменную
+    console.info('Array.pop()')
+    var lastColor = colors.pop();
+
+    console.log(colors);
+
+
+    // shift достает елемент с начала масива . удаляет из масива и берет в переменную
+    console.info('Array.shift()')
+    var shifted = colors.shift();
+    console.log("Shifted :" +shifted);
+    console.log(colors);
+
+
+    // unshift добавин елементы в начало масива сколько угодно. возвращаем длинну масива
+    console.info('Array.unshift(elem1, elem2,....)');
+    var length = colors.unshift('something','orange');
+    console.log("Unshifted :" +length);
+    console.log(colors);
+
+    // join()
+    console.info('---------Array.join()------');
+    var str = colors.join("+");
+    console.log ("Joined: " +str);
+
+    //splice  широкопрофильманя херня
+    console.info('Array.splice(index,count,[end])');
+    colors.splice(2, 2);
+    console.log(colors);
+    colors.splice(2, 0, "Red", "Green", "black");
+    console.log(colors);
+
+
+    //sort
+    colors.sort();
+    console.log(colors);
+
+    //поменять 2 елемента местами
+    var colors = ['blue', 'yellow','red','green','something', ]
+    var temp = colors[1];
+    colors[1]= colors[2];
+    colors[2]=temp;
+    console.log(colors);
+</script>
+</body>
+</html>

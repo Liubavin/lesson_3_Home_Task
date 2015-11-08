@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+
+    var myarra = [];
+        for(i = 0;i <= 10;i++){
+            var usinf = Number(prompt('vvedite chisla ot 0 do 100','34'));
+            console.log('initial value '+i);
+
+            if(usinf<0||usinf>100||isNaN(usinf)){
+                alert('You have entered an incorrect value!');
+                i--;
+                console.log('conditional value '+i);
+            } else {
+                myarra[i] = usinf;
+            }
+        }
+    console.log(myarra);
+    var sum = 0;
+        for (i = 0;i<myarra.length;i++){
+            sum += myarra[i];
+        }
+    console.log(sum);
+    var max = 0;
+
+        for (i = 0; i < myarra.length; i++) {
+            if(myarra[i]>max){
+                max = myarra[i];
+            }
+        }
+    console.log(max);
+
+    var mini = myarra[0];
+    var indx = 0;
+
+        for (i = 0; i < myarra.length; i++) {
+            if(myarra[i]<mini){
+                mini= myarra[i];
+                indx = i;
+            }
+        }
+    console.log(indx);
+    var joida = 0;
+
+        for (i = 0; i < myarra.length; i++) {
+            if (myarra[i]>10&&myarra[i]<30){
+             joida++;
+            }
+        }
+    console.log(joida);
+
+
+/*    myarra.sort();
+    console.log(myarra);
+    console.log('0- is the smallest value index');
+            var bue = myarra.pop();
+    console.log(bue);*/
+
+
+</script>
+</body>
+</html>
